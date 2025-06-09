@@ -23,6 +23,28 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div id="login-panel">
+	<div id="login-header">
+		<div id="error" class="hide alert alert-danger">
+		{if isset($errors)}
+			<h4>
+				{if isset($nbErrors) && $nbErrors > 1}
+					{l s='There are %d errors.' sprintf=$nbErrors}
+				{else}
+					{l s='There is %d error.' sprintf=$nbErrors}
+				{/if}
+			</h4>
+			<ol>
+				{foreach from=$errors item="error"}
+				<li>{$error}</li>
+				{/foreach}
+			</ol>
+		{/if}
+		</div>
+
+		{if isset($warningSslMessage)}
+		<div class="alert alert-warning">{$warningSslMessage}</div>
+		{/if}
+	</div>
 	<div id="shop-img"><img src="{$img_dir}qloapps-login@2x.png" alt="{$shop_name}" width="136px" height="136px" /></div>
 	<div class="flip-container">
 		<div class="flipper">
@@ -108,4 +130,5 @@
 		{/if}
 	</div>
 	{hook h="displayAdminLogin"}
+	
 </div>
