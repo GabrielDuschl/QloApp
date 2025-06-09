@@ -102,7 +102,7 @@
             </div>
         </div>
     </div>
-	{* {include file='recomended-banner.tpl'} *}
+	  {include file='recomended-banner.tpl'} 
 	<div class="row" id="recommendation-wrapper" style="display:none">
 	</div>
     <div class="row">
