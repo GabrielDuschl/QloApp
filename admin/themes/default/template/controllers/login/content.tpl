@@ -25,9 +25,8 @@
 <div id="login-panel">
 	<div id="login-header">
 		<h1 class="text-center">
-			<img id="logo" src="{$img_dir}qloapps@2x.png" width="123px" alt="PrestaShop" />
+			<img id="logo" src="{$img_dir}qloapps@2x.png" width="150px" alt="DS-Logo" />
 		</h1>
-		<div class="text-center">{$qloapps_version}</div>
 		<div id="error" class="hide alert alert-danger">
 		{if isset($errors)}
 			<h4>
@@ -134,25 +133,4 @@
 		{/if}
 	</div>
 	{hook h="displayAdminLogin"}
-	<div id="login-footer">
-		<p class="text-center text-muted">
-			<a href="https://webkul.com" onclick="return !window.open(this.href);">
-				&copy; Webkul&#8482; 2015-{$smarty.now|date_format:"%Y"} - All rights reserved
-			</a>
-		</p>
-		<p class="text-center">
-			<a class="link-social link-twitter _blank" href="https://twitter.com/qloapps" title="Twitter">
-				<i class="icon-twitter"></i>
-			</a>
-			<a class="link-social link-facebook _blank" href="https://www.facebook.com/qloapps" title="Facebook">
-				<i class="icon-facebook"></i>
-			</a>
-			<a class="link-social link-github _blank" href="https://github.com/webkul/hotelcommerce" title="Github">
-				<i class="icon-github"></i>
-			</a>
-			<a class="link-social link-google _blank" href="https://plus.google.com/110221570427070809661" title="Google">
-				<i class="icon-google-plus"></i>
-			</a>
-		</p>
-	</div>
 </div>
