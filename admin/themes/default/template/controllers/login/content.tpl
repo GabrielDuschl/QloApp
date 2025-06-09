@@ -24,9 +24,6 @@
 *}
 <div id="login-panel">
 	<div id="login-header">
-		<h1 class="text-center">
-			<img id="logo" src="{$img_dir}qloapps@2x.png" width="150px" alt="DS-Logo" />
-		</h1>
 		<div id="error" class="hide alert alert-danger">
 		{if isset($errors)}
 			<h4>
